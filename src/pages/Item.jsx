@@ -7,6 +7,7 @@ function App(props)
 	let {loggedin,cart,user}=state
 	let {x}=props
 
+  const image= require("./"+x.image).
 
 	const addtocart=item=>{
 		if(cart.some(y=>y.uid===user.id && y.pid===item.id))
@@ -34,7 +35,7 @@ function App(props)
 		}
 	}
 	return <div className="item">
-		<img src={require("./"+x.image).} alt=""/>
+		<img src={image} alt=""/>
 		<div>{x.title}</div>
 		<div>{x.old}</div>
 		<div>{x.new}</div>
