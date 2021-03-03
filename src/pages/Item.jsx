@@ -7,7 +7,7 @@ function App(props)
 	let {loggedin,cart,user}=state
 	let {x}=props
 
-  const image= require("https://github.com/lalitsecret/student1/blob/main/src/pages/"+x.image).
+  const image= require("https://react-nruirw.stackblitz.io/~/src/pages//"+x.image)
 
 	const addtocart=item=>{
 		if(cart.some(y=>y.uid===user.id && y.pid===item.id))
