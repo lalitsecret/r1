@@ -34,7 +34,7 @@ function App(props)
 		}
 	}
 	return <div className="item">
-		<img src={require("./"+x.image)} alt=""/>
+		<img src={require("./"+x.image).} alt=""/>
 		<div>{x.title}</div>
 		<div>{x.old}</div>
 		<div>{x.new}</div>
