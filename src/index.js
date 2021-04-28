@@ -4,4 +4,5 @@ import App from './pages/App'
 import './style.css'
 import {Provider} from 'react-redux'
 import store from './redux/store'
+// more info on submodules i.e provider ngrx store
 ReactDOM.render(<Provider store={store}><App/></Provider>,document.getElementById('root'));
